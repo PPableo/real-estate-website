@@ -18,7 +18,7 @@ export default function CTA() {
             </button>
           </div>
           <p className="text-sm text-gray-500">
-            Join <span className="text-[#7065F0]">10,000+</span> other landlords in our estatery community.
+            Join <span className="text-[#7065F0]">10,000+</span> other landlords in our Golder Hour Homes community.
           </p>
         </div>
       </section>

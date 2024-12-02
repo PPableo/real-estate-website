@@ -9,8 +9,8 @@ export default function Footer() {
           {/* Logo Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/estatery-logo.svg" alt="Estatery" width={32} height={32} />
-              <span className="text-xl font-bold">Estatery</span>
+              <Image src="/logo.svg" alt="Golden Hour Homes Logo" width={32} height={32} />
+              <span className="text-xl font-bold">Golden Hour Homes</span>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm">© 2024 Estatery. All rights reserved</p>
+            <p className="text-gray-500 text-sm">© 2024 Golden Hour Homes. All rights reserved</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-gray-600">
                 <span className="sr-only">Facebook</span>
