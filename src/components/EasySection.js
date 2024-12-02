@@ -30,7 +30,7 @@ export default function EasySection() {
   ];
 
   return (
-    <section className="bg-[#1E1B4B] py-24 text-white">
+    <section className="easy bg-[#1E1B4B] py-24 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-2xl mb-12">
@@ -40,8 +40,8 @@ export default function EasySection() {
             <span className="text-[#7065F0]">landlords</span>.
           </h2>
           <p className="text-gray-300">
-            Whether it's selling your current home, getting financing, or buying a new home, 
-            we make it easy and efficient. The best part? You'll save a bunch of money 
+            Whether it&apos;s selling your current home, getting financing, or buying a new home, 
+            we make it easy and efficient. The best part? You&apos;ll save a bunch of money 
             and time with our services.
           </p>
         </div>

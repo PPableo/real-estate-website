@@ -7,7 +7,7 @@ import {
 
 export default function Hero() {
   return (
-    <div className="min-h-100 bg-[#F7F7FD]">
+    <div className="hero min-h-100 bg-[#F7F7FD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column */}
@@ -118,8 +118,8 @@ export default function Hero() {
                 </div>
               </div>
               <p className="text-gray-700 mb-4">
-                "I loved how smooth the move was, and finally got the house we
-                wanted."
+              &quot;I loved how smooth the move was, and finally got the house we
+                wanted.&quot;
               </p>
               <div className="flex justify-between text-sm">
                 <div>

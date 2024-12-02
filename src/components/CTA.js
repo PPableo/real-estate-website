@@ -1,11 +1,11 @@
 export default function CTA() {
     return (
-      <section className="py-20 bg-white">
+      <section className="cta py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <p className="text-[#7065F0] font-medium mb-4">No Spam Promise</p>
           <h2 className="text-4xl font-bold text-[#1E1B4B] mb-4">Are you a landlord?</h2>
           <p className="text-gray-600 mb-8">
-            Discover ways to increase your home's value and get listed. No Spam.
+            Discover ways to increase your home&apos;s value and get listed. No Spam.
           </p>
           <div className="flex gap-4 max-w-xl mx-auto mb-4">
             <input
