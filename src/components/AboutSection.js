@@ -14,7 +14,7 @@ export default function AboutSection() {
         {/* Left Card */}
         <div className="bg-[#F8F8FF] rounded-3xl p-12 mb-16 relative">
           <div className="max-w-md">
-            <h2 className="text-[#1E1B4B] text-4xl font-bold leading-tight mb-4">
+            <h2 className="text-secondary text-4xl font-bold leading-tight mb-4">
               The new way to find
               <br />
               your new home
@@ -24,7 +24,7 @@ export default function AboutSection() {
               <br />
               more than 10k+ properties listed.
             </p>
-            <button className="bg-[#7065F0] text-white px-8 py-3 rounded-lg hover:bg-[#6056E0]">
+            <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-[#6056E0]">
               Browse Properties
             </button>
           </div>
@@ -44,11 +44,11 @@ export default function AboutSection() {
           {/* Property Insurance */}
           <div className="space-y-4">
             <div className="w-16 h-16 bg-[#F7F7FD] rounded-full flex items-center justify-center">
-              <div className="w-8 h-8 bg-[#7065F0] rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                 <ShieldCheckIcon className="w-5 h-5 text-white" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-[#1E1B4B]">
+            <h3 className="text-xl font-bold text-secondary">
               Property Insurance
             </h3>
             <p className="text-gray-600">
@@ -60,11 +60,11 @@ export default function AboutSection() {
           {/* Best Price */}
           <div className="space-y-4">
             <div className="w-16 h-16 bg-[#F7F7FD] rounded-full flex items-center justify-center">
-              <div className="w-8 h-8 bg-[#7065F0] rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                 <CurrencyDollarIcon className="w-5 h-5 text-white" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-[#1E1B4B]">Best Price</h3>
+            <h3 className="text-xl font-bold text-secondary">Best Price</h3>
             <p className="text-gray-600">
               Not sure what you should be charging for your property? No need to
               worry, let us do the numbers for you.
@@ -74,11 +74,11 @@ export default function AboutSection() {
           {/* Lowest Commission */}
           <div className="space-y-4">
             <div className="w-16 h-16 bg-[#F7F7FD] rounded-full flex items-center justify-center">
-              <div className="w-8 h-8 bg-[#7065F0] rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                 <CalculatorIcon className="w-5 h-5 text-white" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-[#1E1B4B]">
+            <h3 className="text-xl font-bold text-secondary">
               Lowest Commission
             </h3>
             <p className="text-gray-600">
@@ -90,11 +90,11 @@ export default function AboutSection() {
           {/* Overall Control */}
           <div className="space-y-4">
             <div className="w-16 h-16 bg-[#F7F7FD] rounded-full flex items-center justify-center">
-              <div className="w-8 h-8 bg-[#7065F0] rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                 <HomeModernIcon className="w-5 h-5 text-white" />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-[#1E1B4B]">
+            <h3 className="text-xl font-bold text-secondary">
               Overall Control
             </h3>
             <p className="text-gray-600">

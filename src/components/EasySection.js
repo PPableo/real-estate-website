@@ -30,14 +30,14 @@ export default function EasySection() {
   ];
 
   return (
-    <section className="easy bg-[#1E1B4B] py-24 text-white">
+    <section className="easy bg-secondary py-24 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-2xl mb-12">
           <h2 className="text-4xl font-bold mb-4">
             We make it easy for{' '}
-            <span className="text-[#7065F0]">tenants</span> and{' '}
-            <span className="text-[#7065F0]">landlords</span>.
+            <span className="text-primary">tenants</span> and{' '}
+            <span className="text-primary">landlords</span>.
           </h2>
           <p className="text-gray-300">
             Whether it&apos;s selling your current home, getting financing, or buying a new home, 
@@ -51,8 +51,8 @@ export default function EasySection() {
         <div className="flex overflow-x-auto gap-6 pb-8 scrollbar-hide">
         {features.map((feature, index) => (
           <div key={index} className="flex-none w-[400px] bg-[#2A2750] p-8 rounded-xl hover:bg-[#312E62] transition-all">
-            <div className="bg-[#1E1B4B] w-12 h-12 rounded-full flex items-center justify-center mb-6">
-              <div className="bg-[#7065F0] w-8 h-8 rounded-full flex items-center justify-center">
+            <div className="bg-secondary w-12 h-12 rounded-full flex items-center justify-center mb-6">
+              <div className="bg-primary w-8 h-8 rounded-full flex items-center justify-center">
                 {feature.icon}
               </div>
             </div>

@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#7065F0',
+        primary: '#FFD700', // Golden Yellow
+        secondary: '#1A365D', // Deep Navy
+        accent: '#FFA07A', // Soft Orange
+        neutral: '#F5DEB3', // Warm Beige
+        highlight: '#4B0082', // Deep Purple
       }
     },
   },

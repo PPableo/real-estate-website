@@ -6,17 +6,14 @@ import EasySection from '@/components/EasySection'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 
-
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <Hero />
       <AboutSection />
       <PropertySection />
       <EasySection />
       <CTA />
-      <Footer />
     </main>
   )
 }

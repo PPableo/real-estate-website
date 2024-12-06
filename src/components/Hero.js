@@ -22,7 +22,7 @@ export default function Hero() {
 
             {/* Action Buttons */}
             <div className="inline-flex p-1 bg-white rounded-lg shadow-sm">
-              <button className="px-8 py-2 bg-[#7065F0] text-white rounded-md">
+              <button className="px-8 py-2 bg-primary text-white rounded-md">
                 Rent
               </button>
               <button className="px-8 py-2 text-gray-600 hover:bg-gray-50 rounded-md">
@@ -57,7 +57,7 @@ export default function Hero() {
                   />
                 </div>
               </div>
-              <button className="w-full bg-[#7065F0] text-white py-3 rounded-md hover:bg-[#5B54C0]">
+              <button className="w-full bg-primary text-white py-3 rounded-md hover:bg-[#5B54C0]">
                 Browse Properties
               </button>
             </div>
@@ -66,23 +66,23 @@ export default function Hero() {
             <div className="grid grid-cols-2 gap-8">
               <div className="flex items-center space-x-4">
                 <div className="bg-[#F7F7FD] p-3 rounded-full">
-                  <div className="w-8 h-8 bg-[#7065F0] rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                   <UserGroupIcon className="w-5 h-5 text-white" />
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#7065F0] text-xl font-bold">
+                  <p className="text-primary text-xl font-bold">
                     50k+ renters
                   </p>
                   <p className="text-gray-600">believe in our service</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
-              <div className="w-8 h-8 bg-[#7065F0] rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                   <BuildingOffice2Icon className="w-5 h-5 text-white" />
                   </div>
                 <div>
-                  <p className="text-[#7065F0] text-xl font-bold">
+                  <p className="text-primary text-xl font-bold">
                     10k+ properties
                   </p>
                   <p className="text-gray-600">ready for occupancy</p>

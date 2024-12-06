@@ -77,7 +77,7 @@ export default function PropertySection() {
         {/* Filter and Search */}
         <div className="flex justify-between items-center mb-12">
           <div className="flex gap-4">
-            <button className="bg-[#7065F0] text-white px-6 py-2.5 rounded-lg flex items-center gap-2 transition-all hover:bg-[#5B54C0]">
+            <button className="bg-primary text-white px-6 py-2.5 rounded-lg flex items-center gap-2 transition-all hover:bg-[#5B54C0]">
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
               </svg>
@@ -94,7 +94,7 @@ export default function PropertySection() {
             <input
               type="text"
               placeholder="Search..."
-              className="w-[auto] pl-12 pr-4 py-2.5 rounded-lg border-0 bg-white focus:ring-2 focus:ring-[#7065F0] transition-all"
+              className="w-[auto] pl-12 pr-4 py-2.5 rounded-lg border-0 bg-white focus:ring-2 focus:ring-primary transition-all"
             />
             <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -115,11 +115,11 @@ export default function PropertySection() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 {property.isPopular && (
-                  <span className="absolute top-4 left-4 bg-[#7065F0] text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
                     POPULAR
                   </span>
                 )}
-                <button className="absolute top-4 right-4 p-2 bg-white rounded-full transition-all hover:bg-[#7065F0] hover:text-white group">
+                <button className="absolute top-4 right-4 p-2 bg-white rounded-full transition-all hover:bg-primary hover:text-white group">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
@@ -127,7 +127,7 @@ export default function PropertySection() {
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-[#7065F0] text-2xl font-bold">${property.price}</span>
+                  <span className="text-primary text-2xl font-bold">${property.price}</span>
                   <span className="text-gray-500">/month</span>
                 </div>
                 <h3 className="text-xl font-bold text-[#1E1B4B] mb-2">{property.name}</h3>
@@ -159,7 +159,7 @@ export default function PropertySection() {
 
         {/* Browse More Button */}
         <div className="text-center mt-12">
-          <button className="bg-[#1E1B4B] text-white px-8 py-3 rounded-lg transition-all hover:bg-[#7065F0]">
+          <button className="bg-[#1E1B4B] text-white px-8 py-3 rounded-lg transition-all hover:bg-primary">
             Browse more properties
           </button>
         </div>
