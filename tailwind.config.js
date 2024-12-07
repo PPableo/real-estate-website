@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#FFD700', // Golden Yellow
-        secondary: '#1A365D', // Deep Navy
-        accent: '#FFA07A', // Soft Orange
-        neutral: '#F5DEB3', // Warm Beige
+        primary: '#FFD700', // Golden Yellow Use it sparingly for accents and call-to-action buttons to draw attention.
+        secondary: '#1A365D', // Deep Navy Perfect for headers, footers, and text to ensure readability.
+        accent: '#FFA07A', // Soft Orange Use for secondary elements, hover states, or background accents.
+        neutral: '#F5DEB3', // Warm Beige Ideal for backgrounds and large content areas.
         highlight: '#4B0082', // Deep Purple
       }
     },
