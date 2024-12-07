@@ -38,21 +38,21 @@ export default function AboutPage() {
     <>
       <main className="pt-24 pb-16 bg-[#F7F7FD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-secondary mb-8">
+          <h1 className="text-4xl font-bold text-[#1E1B4B] mb-8">
             About Golden Hour Homes
           </h1>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-secondary">Our Mission</h2>
+              <h2 className="text-2xl font-bold text-[#1E1B4B]">Our Mission</h2>
               <p className="text-gray-600">
-                At Golden Hour Homes, we're transforming the real estate experience. Our
-                mission is to make property transactions seamless, transparent,
+                At Golden Hour Homes&lsquo; we&apos;re transforming the real estate experience. Our
+                mission is to make property transactions seamless&lsquo; transparent&lsquo;
                 and accessible to everyone.
               </p>
 
               <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="text-xl font-bold text-secondary mb-4">
+                <h3 className="text-xl font-bold text-[#1E1B4B] mb-4">
                   Why Choose Us
                 </h3>
                 <ul className="space-y-4 text-gray-600">
@@ -65,14 +65,14 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-secondary">Our Values</h2>
+              <h2 className="text-2xl font-bold text-[#1E1B4B]">Our Values</h2>
               <div className="grid gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm">
                   <h3 className="text-lg font-bold text-primary mb-2">
                     Transparency
                   </h3>
                   <p className="text-gray-600">
-                    Clear pricing, no hidden fees, and honest communication.
+                    Clear pricing&lsquo; no hidden fees&lsquo; and honest communication.
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -98,7 +98,7 @@ export default function AboutPage() {
 
         {/* FAQ Section */}
         <div className="mt-20">
-          <h2 className="text-3xl font-bold text-secondary mb-8 text-center">
+          <h2 className="text-3xl font-bold text-[#1E1B4B] mb-8 text-center">
             Frequently Asked Questions
           </h2>
           <div className="max-w-3xl mx-auto">
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full bg-white p-6 rounded-xl shadow-sm flex justify-between items-center hover:bg-gray-50 transition-all"
                 >
-                  <span className="text-lg font-semibold text-secondary text-left">
+                  <span className="text-lg font-semibold text-[#1E1B4B] text-left">
                     {faq.question}
                   </span>
                   <ChevronDownIcon
