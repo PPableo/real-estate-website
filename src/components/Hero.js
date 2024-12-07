@@ -22,7 +22,7 @@ export default function Hero() {
 
             {/* Action Buttons */}
             <div className="inline-flex p-1 bg-white rounded-lg shadow-sm">
-              <button className="px-8 py-2 bg-primary text-white rounded-md">
+              <button className="px-8 py-2 bg-secondary text-white rounded-md hover:bg-primary">
                 Rent
               </button>
               <button className="px-8 py-2 text-gray-600 hover:bg-gray-50 rounded-md">
@@ -57,7 +57,7 @@ export default function Hero() {
                   />
                 </div>
               </div>
-              <button className="w-full bg-primary text-white py-3 rounded-md hover:bg-[#5B54C0]">
+              <button className="w-full bg-secondary text-white py-3 rounded-md hover:bg-primary">
                 Browse Properties
               </button>
             </div>

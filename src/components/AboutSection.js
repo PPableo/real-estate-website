@@ -24,7 +24,7 @@ export default function AboutSection() {
               <br />
               more than 10k+ properties listed.
             </p>
-            <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-[#6056E0]">
+            <button className="bg-secondary text-white px-8 py-3 rounded-lg hover:bg-primary">
               Browse Properties
             </button>
           </div>

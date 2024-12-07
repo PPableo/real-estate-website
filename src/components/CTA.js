@@ -13,7 +13,7 @@ export default function CTA() {
               placeholder="Enter your email address"
               className="flex-1 px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary"
             />
-            <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-[#5B54C0] transition-colors">
+            <button className="bg-secondary text-white px-8 py-3 rounded-lg hover:bg-primary transition-colors">
               Submit
             </button>
           </div>

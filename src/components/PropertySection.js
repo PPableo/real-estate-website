@@ -159,7 +159,7 @@ export default function PropertySection() {
 
         {/* Browse More Button */}
         <div className="text-center mt-12">
-          <button className="bg-[#1E1B4B] text-white px-8 py-3 rounded-lg transition-all hover:bg-primary">
+          <button className="bg-secondary text-white px-8 py-3 rounded-lg transition-all hover:bg-primary">
             Browse more properties
           </button>
         </div>
