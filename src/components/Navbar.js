@@ -2,9 +2,12 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { useSession, signOut } from 'next-auth/react';
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { data: session, status } = useSession();
 
   const navLinks = [
     { name: "Rent", href: "/rent", current: true },
@@ -45,20 +48,38 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-
-          <div className="hidden md:flex items-center space-x-4">
-            <Link
-              href="/login"
-              className="text-gray-700 hover:text-gray-900 px-4 py-2 text-sm font-medium"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="bg-secondary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary"
-            >
-              Sign up
-            </Link>
+          <div className="flex items-center space-x-4">
+            {status === "authenticated" ? (
+              <>
+                <Link
+                  href="/dashboard"
+                  className="text-gray-700 hover:text-gray-900 px-4 py-2 text-sm font-medium"
+                >
+                  Dashboard
+                </Link>
+                <button
+                  onClick={() => signOut({ callbackUrl: "/" })}
+                  className="bg-secondary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent"
+                >
+                  Sign Out
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/login"
+                  className="text-gray-700 hover:text-gray-900 px-4 py-2 text-sm font-medium"
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/register"
+                  className="bg-primary text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-accent"
+                >
+                  Sign up
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>
