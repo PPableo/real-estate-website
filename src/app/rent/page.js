@@ -71,7 +71,8 @@ export default function RentPage(){
     const [budget, setBudget] = useState(0)
     const [size, setSize] = useState(0)
     return(
-        <div>
+      <main className="pt-24 pb-16">
+          <div>
             <p>Fill out the below form and we will try to find you the perfect to fit your needs</p>
             <form action="" method="POST">
                 <label>Enter the amount of people that you would be living with</label>
@@ -89,5 +90,6 @@ export default function RentPage(){
                 <button type="submit">Find</button>
             </form>
         </div>
+      </main>
     )
 }

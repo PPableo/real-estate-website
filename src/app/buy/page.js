@@ -72,6 +72,7 @@ export default function BuyPage(){
     const [budget, setBudget] = useState(0)
     const [size, setSize] = useState(0)
     return(
+      <main className="pt-24 pb-16">
         <div>
             <p>Fill out the below form and we will try to find you the perfect to fit your needs</p>
             <form action="" method="POST">
@@ -90,5 +91,6 @@ export default function BuyPage(){
                 <button type="submit">Find</button>
             </form>
         </div>
+      </main>
     )
 }
