@@ -37,6 +37,11 @@ export default function DashboardLayout({ children }) {
             Appointments
           </Link>
         </nav>
+        <div jsf:rendered="#{session.user.agent == true}">
+          <div className="mt-20">
+            <h2 className="text-lg font-semibold">Agent menu</h2>
+          </div>
+        </div>
       </aside>
       <main className="flex-1 p-8">
         {children}
