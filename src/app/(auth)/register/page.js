@@ -8,7 +8,8 @@ export default function RegisterPage() {
     name: '',
     email: '',
     password: '',
-    confirmPassword: ''
+    confirmPassword: '',
+    agent: false
   });
 
   const handleSubmit = async (e) => {
@@ -83,6 +84,11 @@ export default function RegisterPage() {
             className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-primary"
             required
           />
+        </div>
+
+        <div className="display:flex justify-content:space-between">
+          <label className="block text-sm font-medium text-secondary">Agent</label>
+          <input type="checkbox" onChange={(e) => setFormData({...formData, agent: (e.target.value == 'on' ? true : false)})}/>
         </div>
 
         <button
