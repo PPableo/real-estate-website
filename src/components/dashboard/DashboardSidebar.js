@@ -4,7 +4,7 @@ export default function DashboardSidebar(){
     return(
         <div>
             <Link href="/SavedProperties">Your saved properties</Link>
-            <Link href="/AppointmentCalendar">Your appointment calender</Link>
+            <Link href="/AppointmentCalendar">Your appointment calendar</Link>
             <Link href="/MessageCenter">Messages</Link>
             <Link href="/PropertyAlerts">Your property alerts</Link>
         </div>
