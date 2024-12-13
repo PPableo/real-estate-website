@@ -37,6 +37,21 @@ export default function DashboardLayout({ children }) {
             Appointments
           </Link>
         </nav>
+        {session.user.agent ? 
+        <div>
+        <div className="mt-20">
+          <h2 className="text-lg font-semibold">Agent menu</h2>
+        </div>
+        <nav>
+          <Link href="/dashboard/properties" className="block py-2 px-4 hover:bg-primary hover:text-secondary rounded-lg">
+            Properties
+          </Link>
+          <Link href="/dashboard/analytics" className="block py-2 px-4 hover:bg-primary hover:text-secondary rounded-lg">
+            Analytics
+          </Link>
+        </nav>
+      </div> 
+      : <br />}
       </aside>
       <main className="flex-1 p-8">
         {children}

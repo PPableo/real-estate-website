@@ -35,7 +35,8 @@ export const authOptions = {
             id: user._id.toString(),
             email: user.email,
             name: user.name,
-            role: user.role || 'user'
+            role: user.role || 'user',
+            agent: user.agent
           };
         } catch (error) {
           console.error('Auth error:', error);
@@ -49,6 +50,7 @@ export const authOptions = {
       if (user) {
         token.id = user.id;
         token.role = user.role;
+        token.agent = user.agent;
       }
       if (trigger === "update" && session) {
         token = { ...token, ...session };
@@ -59,6 +61,7 @@ export const authOptions = {
       if (token) {
         session.user.id = token.id;
         session.user.role = token.role;
+        session.user.agent = token.agent;
       }
       return session;
     }
