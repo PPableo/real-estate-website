@@ -17,7 +17,14 @@ const UserSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
+  },
+  agent: {
+    type: Boolean,
+    default: false
   }
 });
 
-export default mongoose.models.User || mongoose.model('User', UserSchema);
+//Without this line, updating the user schema was impossible for some reason
+mongoose.models = {};
+
+export default mongoose.model('User', UserSchema);
