@@ -7,7 +7,7 @@ import User from '@/models/User';
 export async function POST(request) {
   try {
     await dbConnect();
-    const { name, email, password } = await request.json();
+    const { name, email, password, agent } = await request.json();
 
     // Validation
     if (!name || !email || !password) {
@@ -33,7 +33,8 @@ export async function POST(request) {
     const user = await User.create({
       name,
       email,
-      password: hashedPassword
+      password: hashedPassword,
+      agent
     });
 
     return NextResponse.json(
