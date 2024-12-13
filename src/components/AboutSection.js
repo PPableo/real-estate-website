@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import {
   ShieldCheckIcon, // For insurance
@@ -24,9 +25,11 @@ export default function AboutSection() {
               <br />
               more than 10k+ properties listed.
             </p>
-            <button className="bg-secondary text-white px-8 py-3 rounded-lg hover:bg-primary">
-              Browse Properties
-            </button>
+            <Link href="/#properties" scroll={false}>
+              <button className="bg-secondary text-white px-8 py-3 rounded-lg hover:bg-primary">
+                Browse Properties
+              </button>
+            </Link>
           </div>
           <div className="absolute bottom-0 right-0 w-1/2 h-full flex items-end">
             <Image
