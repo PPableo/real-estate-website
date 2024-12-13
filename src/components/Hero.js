@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   UserGroupIcon,
   BuildingOffice2Icon
@@ -34,33 +35,40 @@ export default function Hero() {
             </div>
 
             {/* Search Form */}
-            <div className="bg-white p-4 rounded-lg shadow-sm space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm text-gray-500 mb-1">
-                    Location
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue="Barcelona, Spain"
-                    className="w-full p-2 border border-gray-200 rounded-md"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm text-gray-500 mb-1">
-                    When
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Select Move-in Date"
-                    className="w-full p-2 border border-gray-200 rounded-md"
-                  />
-                </div>
-              </div>
-              <button className="w-full bg-secondary text-white py-3 rounded-md hover:bg-primary">
-                Browse Properties
-              </button>
-            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+  <div className="grid grid-cols-2 gap-6">
+    <div>
+      <label className="block text-sm font-medium text-gray-600 mb-2">
+        Location
+      </label>
+      <input
+        type="text"
+        placeholder="Enter location"
+        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+      />
+    </div>
+    <div>
+      <label className="block text-sm font-medium text-gray-600 mb-2">
+        When
+      </label>
+      <input
+        type="text"
+        placeholder="Select Move-in Date"
+        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+      />
+    </div>
+  </div>
+  <div className="mt-6">
+    <Link 
+      href="/#properties" 
+      scroll={true} 
+      className="bg-secondary w-full text-white px-8 py-3 rounded-lg hover:bg-primary"
+    >
+      Browse Properties
+    </Link>
+  </div>
+</div>
+
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8">
