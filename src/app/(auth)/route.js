@@ -30,7 +30,8 @@ export const authOptions = {
           return {
             id: user._id.toString(),
             email: user.email,
-            name: user.name
+            name: user.name,
+            agent: user.agent
           };
         } catch (error) {
           console.error('Auth error:', error);
